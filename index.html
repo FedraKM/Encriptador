@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+
+            <img src="Imagenes/logoAlura.png" id="logoAlura">
+
+        </header>
+        
+        <main>
+
+            <section>
+                <div class="caja1">
+                    <h1 onclick="IngresarTexto()">Ingrese el texto que deseas encriptar o desencriptar</h1>
+                    <div id="contenedorTextArea" style="display: none;">
+                        <textarea id="TextArea" rows="12" cols="34"></textarea>
+                    </div>
+                </div>
+            </section>
+    
+            <section>
+                <div class="caja2">
+                    <img class="candado" src="Imagenes/candado.png">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <input onclick="Copiar ()" type="submit" value="Copiar" id="boton-copiar">
+                    <div id="contenedorTextArea2" style="display: none;">
+                        <textarea id="TextArea2" rows="10" cols="10"></textarea>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="avisos">
+                    <img src="Imagenes/admiración.png">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class= "botones">
+                    <input onclick= "Encriptar()" type="submit" value ="Encriptar" id="boton-encriptar">
+                    <input onclick= "Desencriptar()" type="submit" value="Desencriptar" id="boton-desencriptar">
+                </div>
+            </section>
+            
+
+        </main>
+        
+        <footer>
+            <p>Desarrollado por <span id="nombre">Fedra Macario</span></p>
+            <p>Correo Electrónico: <span id="correo">macariofedra@gmail.com</span></p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
+
+
+
+
+
